@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Tai's Language Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Tai's Language Survey</h1>
+    <p id="description">
+      This is a survey to explore attitudes towards language.
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name"
+        >Enter your name:
+        <input
+          name="name"
+          id="name"
+          type="text"
+          required
+          placeholder="Your name"
+      /></label>
+      <label id="email-label" for="email"
+        >Enter your email
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="address@gmail.com"
+          required
+      /></label>
+      <label id="number-label" for="number"
+        >How many languages can you speak fluently?
+        <input
+          id="number"
+          name="num-langs"
+          type="number"
+          min="1"
+          max="10"
+          placeholder="2"
+          required
+      /></label>
+      <label for="best-lang"
+        >Which language do you speak best?
+        <input
+          name="best-lang"
+          id="best-lang"
+          type="text"
+          required
+          placeholder="English"
+      /></label>
+      <label
+        ><p>I would like to learn at least one more language:</p>
+        Yes<input
+          id="yes-learn-more"
+          value="yes"
+          name="learn-more"
+          type="radio"
+      /></label>
+      <label
+        >No<input id="no-learn-more" value="no" name="learn-more" type="radio"
+      /></label>
+      <label
+        >Check here if you'd like to check here:
+        <input value="yes" type="checkbox"
+      /></label>
+      <label
+        >Check here if you'd like to check here:
+        <input value="love" type="checkbox"
+      /></label>
+      <label
+        >Do you like dropdown menus?
+        <select id="dropdown">
+          <option>Yes</option>
+          <option>Yes!</option>
+        </select>
+      </label>
+      <label>Write whatever is on your mind: <textarea></textarea></label>
+      <label><input id="submit" type="submit" /></label>
+    </form>
+  </body>
+</html>
